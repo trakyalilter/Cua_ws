@@ -25,6 +25,16 @@ while True:
     Of_X = X_OffSet.get_value()
     print(Fore.BLUE+f"X Offset Value:{Of_X}nm")
 
+    X_POS = client.get_node("ns=2;i=7")
+    Y_POS = client.get_node("ns=2;i=8")
+    Z_POS = client.get_node("ns=2;i=9")
+
+    X_Pos = X_POS.get_value()
+    Y_Pos = Y_POS.get_value()
+    Z_Pos = Z_POS.get_value()
+
+    print(Fore.LIGHTYELLOW_EX+f"X:{X_Pos} Y:{Y_Pos} Z:{Z_Pos}")
+
     print(Fore.YELLOW+"***************************************\n")
     print(Fore.MAGENTA+"***************************************")
 
